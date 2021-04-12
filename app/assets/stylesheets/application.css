@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+/* *とは全てに適用される。と言う意味。 */
+ * {
+   box-sizing: border-box;
+ }
