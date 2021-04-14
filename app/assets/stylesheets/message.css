@@ -1,0 +1,48 @@
+
+/* 基礎・土台 */
+.wrapper {
+  display: flex;
+}
+
+.side_bar {
+  background-color: #253141;
+  width: 300px;
+  height: 100vh;
+}
+
+.chat {
+  background-color: #ffffff;
+  width: calc(100vw - 300px);
+}
+
+
+/* サイドバー設定 */
+.side_bar_header {
+  height: 100px;
+  padding: 0 20px;
+}
+
+.rooms {
+  background-color: #2F3E51;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+}
+
+
+/* メイン窓設定 */
+.chat_header {
+  height: 100px;
+  padding: 0 40px;
+}
+
+.message {
+  background-color: #FAFAFA;
+  height: calc(100vh - 100px - 90px);
+  padding: 46px 40px 0;
+}
+
+.form {
+  background-color: #DDDDDD;
+  height: 90px;
+  padding: 20px 40px;
+}
