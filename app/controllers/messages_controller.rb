@@ -8,8 +8,8 @@ class MessagesController < ApplicationController
 
   def create
     @room = Room.find(params[:room_id])
-    @content = @room.messages.new(message_params)
-    if @content.save
+    @message = @room.messages.new(message_params)
+    if @message.save
       redirect_to room_messages_path(@room)
     else
       @messages = @room.messages.includes(:user)
@@ -17,8 +17,8 @@ class MessagesController < ApplicationController
     end
   end
 
-
   private
+
   def message_params
     params.require(:message).permit(:content).merge(user_id: current_user.id)
   end
