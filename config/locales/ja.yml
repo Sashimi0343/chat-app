@@ -1,0 +1,6 @@
+ja:
+  time:
+    formats:
+      default: "%Y/%m/%d %H:%M:%S"
+#新しく作ったファイル＠＠＠＠＠＠＠＠＠＠
+#config/locales/ja.yml
